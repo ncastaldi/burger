@@ -1,4 +1,15 @@
-<div class="row" id="orders">
+<div class="col s3">
+    <div class="collection">
+        {{#each burgers}}
+        <a href="#!" class="collection-item"><span class="badge">{{id}}</span><span
+                class="badge">{{devoured}}</span>{{burger_name}}</a>
+        {{/each}}
+    </div>
+</div>
+<div class="col s6">
+    <p>Place Form Here?</p>
+</div>
+<div class="col s3">
     <div class="collection">
         {{#each burgers}}
         <a href="#!" class="collection-item"><span class="badge">{{id}}</span><span
