@@ -1,10 +1,10 @@
 -- Drop database
-DROP DATABASE IF EXISTS your_database_name;
+DROP DATABASE IF EXISTS burgers_db;
 
 -- Create database
-CREATE DATABASE your_database_name;
+CREATE DATABASE burgers_db;
 
 -- Use database
-USE your_database_name;
+USE burgers_db;
 
 -- Create tables
