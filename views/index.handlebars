@@ -1,19 +1,27 @@
 <div class="col s3">
     <div class="collection">
-        {{#each burgers}}
+        {{#each burgers}}{{#unless devoured}}
         <a href="#!" class="collection-item"><span class="badge">{{id}}</span><span
                 class="badge">{{devoured}}</span>{{burger_name}}</a>
-        {{/each}}
+        {{/unless}}{{/each}}
     </div>
 </div>
 <div class="col s6">
-    <p>Place Form Here?</p>
+    <div class="row">
+        <div class="input-field col offset-s3 s6">
+            <input id="orderBurger" type="text" class="validate">
+            <label class="active" for="orderBurger">Enter Your Burger Order</label>
+            <button class="btn waves-effect waves-light right blue-grey" type="submit" name="action">
+                Order
+            </button>
+        </div>
+    </div>
 </div>
 <div class="col s3">
     <div class="collection">
-        {{#each burgers}}
+        {{#each burgers}}{{#if devoured}}
         <a href="#!" class="collection-item"><span class="badge">{{id}}</span><span
                 class="badge">{{devoured}}</span>{{burger_name}}</a>
-        {{/each}}
+        {{/if}}{{/each}}
     </div>
 </div>
