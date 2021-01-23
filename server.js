@@ -1,10 +1,6 @@
 // Require external npm packages
 const express = require("express");
 const exphbs = require("express-handlebars");
-const mysql = require("mysql");
-
-// Require local depenancies
-//const connection = require("./config/connection");
 
 // Decalre instance of ExpressJS
 const app = express();
@@ -14,6 +10,9 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Middleware
+// Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static("public"));
+
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -22,37 +21,10 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Declare and make connection to database
-//connection.makeConnection();
-const connection = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "Procmi*1", // ADD DATABASE PASSWORD
-    database: "burgers_db" // ADD DATABASE NAME
-});
+// Import routes and give the server access to them.
+const routes = require("./controllers/burgers_controller");
 
-// Make connection
-connection.connect(function (err) {
-    if (err) {
-        console.error("error connecting: " + err.stack);
-        return;
-    }
-
-    console.log("Database connected as id: " + connection.threadId);
-});
-
-// HTML Routes
-app.get("/", function (req, res) {
-    const querryString = `SELECT * FROM burgers;`
-    connection.query(querryString, function (err, data) {
-        res.render("index", { burgers: data });
-    });
-});
-// HTML Routes
-
-// API Routes
-// API Routes
+app.use(routes);
 
 // Start Express server
 app.listen(PORT, function () {
