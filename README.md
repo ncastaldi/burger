@@ -22,7 +22,7 @@ TBD (Optional)
 
 ## Badges
 
-[Get Badges](https://shields.io/)
+[![GitHub license](https://img.shields.io/github/license/ncastaldi/burger?style=for-the-badge)](https://github.com/ncastaldi/burger/blob/main/LICENSE)
 
 ## Installation
 
