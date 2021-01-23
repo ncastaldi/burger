@@ -3,7 +3,6 @@ $(function () {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
-
         const newBurger = {
             name: $("#newBurger").val().trim(),
             devoured: false
