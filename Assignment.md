@@ -92,7 +92,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
    - Close out of the MySQL command line tool: `exit`.
 
-#### Config Setup
+#### Config Setup YOU ARE HERE
 
 1. Inside your `burger` directory, create a folder named `config`.
 
