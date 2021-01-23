@@ -1,7 +1,7 @@
 {
-  "name": "template-full_stack",
+  "name": "burger",
   "version": "1.0.0",
-  "description": "Template",
+  "description": "Burger",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncastaldi/template-full_stack.git"
+    "url": "git+https://github.com/ncastaldi/burger.git"
   },
   "author": "Nathan Castaldi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ncastaldi/template-full_stack/issues"
+    "url": "https://github.com/ncastaldi/burger/"
   },
   "homepage": "https://github.com/ncastaldi/template-full_stack#readme",
   "dependencies": {
