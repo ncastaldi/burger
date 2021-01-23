@@ -144,17 +144,17 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 1.  Inside your `burger` directory, create a folder named `views`.
 
-    - Create the `index.handlebars` file inside `views` directory.
+        - Create the `index.handlebars` file inside `views` directory.
 
-    - Create the `layouts` directory inside `views` directory.
+        - Create the `layouts` directory inside `views` directory.
 
-           - Create the `main.handlebars` file inside `layouts` directory.
+               - Create the `main.handlebars` file inside `layouts` directory.
 
-           - Setup the `main.handlebars` file so it's able to be used by Handlebars.
+               - Setup the `main.handlebars` file so it's able to be used by Handlebars.
 
-      **YOU ARE HERE** - Setup the `index.handlebars` to have the template that Handlebars can render onto.
+           - Setup the `index.handlebars` to have the template that Handlebars can render onto.
 
-           - Create a button in `index.handlebars` that will submit the user input into the database.
+    **YOU ARE HERE** - Create a button in `index.handlebars` that will submit the user input into the database.
 
 #### Directory structure
 
