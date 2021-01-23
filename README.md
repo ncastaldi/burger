@@ -1,4 +1,4 @@
-# Your Project Title
+# Assignment: Burger Logger
 
 ## Description
 
