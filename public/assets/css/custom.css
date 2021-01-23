@@ -1,9 +1,10 @@
-h1 {
-  color: darkgray;
+h1,
+h5 {
+  color: red;
 }
 
 body {
-  background-color: yellowgreen;
+  background-color: lightgray;
 }
 
 .orders {
