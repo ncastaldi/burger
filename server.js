@@ -33,7 +33,6 @@ app.get("/", function (req, res) {
 // API Routes
 // API Routes
 
-
 // Start Express server
 app.listen(PORT, function () {
     // Log (server-side) when our server has started
