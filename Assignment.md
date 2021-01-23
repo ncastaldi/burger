@@ -92,7 +92,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
    - Close out of the MySQL command line tool: `exit`.
 
-#### Config Setup
+#### Config Setup DONE
 
 1. Inside your `burger` directory, create a folder named `config`.
 
@@ -105,7 +105,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 3. Create an `orm.js` file inside `config` directory.
 
    - Import (require) `connection.js` into `orm.js`
-     **YOU ARE HERE**
+
    - In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
      - `selectAll()`
