@@ -1,4 +1,5 @@
 <div class="col s3">
+    <h5 class="center">Ordered Burgers</h5>
     <div class="collection">
         {{#each burgers}}{{#unless devoured}}
         <a href="#!" class="collection-item"><span class="badge">{{id}}</span><span
@@ -18,6 +19,7 @@
     </div>
 </div>
 <div class="col s3">
+    <h5 class="center">Eaten Burgers</h5>
     <div class="collection">
         {{#each burgers}}{{#if devoured}}
         <a href="#!" class="collection-item"><span class="badge">{{id}}</span><span
