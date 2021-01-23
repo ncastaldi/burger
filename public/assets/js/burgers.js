@@ -1,5 +1,16 @@
 $(document).ready(function () {
-    $(".orderBurger").on("submit", function (event) {
+
+    // Declare DOM Variables
+    const orderForm = $(".orderForm");
+
+    // Declare JavaScript Variables
+
+    // Function Definitions
+    function sidenav() {
+        $('.sidenav').sidenav();
+    };
+
+    function newBurger(event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
@@ -19,5 +30,10 @@ $(document).ready(function () {
                 location.reload();
             }
         );
-    });
-});
+    }
+
+    // Function Calls
+
+    // Define Event Listeners
+    orderForm.on("submit", newBurger);
+})
