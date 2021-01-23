@@ -46,7 +46,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 ## Instructions
 
-#### App Setup
+#### App Setup DONE
 
 1. Create a GitHub repo called `burger` and clone it to your computer.
 
@@ -63,7 +63,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 7. Require the following npm packages inside of the server.js file:
    - express
 
-#### DB Setup
+#### DB Setup DONE
 
 1. Inside your `burger` directory, create a folder named `db`.
 
@@ -92,7 +92,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
    - Close out of the MySQL command line tool: `exit`.
 
-#### Config Setup YOU ARE HERE
+#### Config Setup
 
 1. Inside your `burger` directory, create a folder named `config`.
 
@@ -105,7 +105,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 3. Create an `orm.js` file inside `config` directory.
 
    - Import (require) `connection.js` into `orm.js`
-
+     **YOU ARE HERE**
    - In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
      - `selectAll()`
@@ -120,11 +120,11 @@ Having an active and healthy commit history on GitHub is important for your futu
 
   - In `models`, make a `burger.js` file.
 
-    - Inside `burger.js`, import `orm.js` into `burger.js`
+        - Inside `burger.js`, import `orm.js` into `burger.js`
 
-    - Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
+    **YOU ARE HERE** - Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
 
-    - Export at the end of the `burger.js` file.
+        - Export at the end of the `burger.js` file.
 
 #### Controller setup
 
@@ -136,24 +136,25 @@ Having an active and healthy commit history on GitHub is important for your futu
 
    - Express
    - `burger.js`
+     **YOU ARE HERE**
 
 4. Create the `router` for the app, and export the `router` at the end of your file.
 
 #### View setup
 
-1. Inside your `burger` directory, create a folder named `views`.
+1.  Inside your `burger` directory, create a folder named `views`.
 
-   - Create the `index.handlebars` file inside `views` directory.
+    - Create the `index.handlebars` file inside `views` directory.
 
-   - Create the `layouts` directory inside `views` directory.
+    - Create the `layouts` directory inside `views` directory.
 
-     - Create the `main.handlebars` file inside `layouts` directory.
+           - Create the `main.handlebars` file inside `layouts` directory.
 
-     - Setup the `main.handlebars` file so it's able to be used by Handlebars.
+           - Setup the `main.handlebars` file so it's able to be used by Handlebars.
 
-     - Setup the `index.handlebars` to have the template that Handlebars can render onto.
+      **YOU ARE HERE** - Setup the `index.handlebars` to have the template that Handlebars can render onto.
 
-     - Create a button in `index.handlebars` that will submit the user input into the database.
+           - Create a button in `index.handlebars` that will submit the user input into the database.
 
 #### Directory structure
 
