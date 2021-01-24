@@ -1,12 +1,13 @@
 <div class="col s3">
     <h5 class="center">Ordered Burgers</h5>
+    {{#each burgers}}{{#unless devoured}}
     <div class="collection">
-        {{#each burgers}}{{#unless devoured}}
-        <a href="#!" class="collection-item"><span class="badge">{{id}}</span><span
-                class="badge">{{devoured}}</span>{{burger_name}}</a>
-        {{/unless}}{{/each}}
+        <a href="#!" class="collection-item change-devoured"><span class="badge">{{#if devoured}}Send it Back{{else}}Eat
+                Your Burger!{{/if}}</span>{{burger_name}}</a>
     </div>
+    {{/unless}}{{/each}}
 </div>
+
 <div class="col s6">
     <form class="orderForm">
         <div class="row">
@@ -20,12 +21,13 @@
         </div>
     </form>
 </div>
+
 <div class="col s3">
     <h5 class="center">Eaten Burgers</h5>
+    {{#each burgers}}{{#if devoured}}
     <div class="collection">
-        {{#each burgers}}{{#if devoured}}
-        <a href="#!" class="collection-item"><span class="badge">{{id}}</span><span
-                class="badge">{{devoured}}</span>{{burger_name}}</a>
-        {{/if}}{{/each}}
+        <a href="#!" class="collection-item change-devoured"><span class="badge">{{#if devoured}}Send it Back{{else}}Eat
+                Your Burger!{{/if}}</span>{{burger_name}}</a>
     </div>
+    {{/if}}{{/each}}
 </div>
