@@ -1,0 +1,7 @@
+<div class="collection">
+    {{#each burgers}}{{#if devoured}}
+    <button data-id="{{id}}" data-newstate="{{devoured}}" class="collection-item change-devoured">{{burger_name}}<span
+            class="badge">{{#if devoured}}Send it Back{{else}}Eat
+            Your Burger!{{/if}}</span></button>
+    {{/if}}{{/each}}
+</div>
