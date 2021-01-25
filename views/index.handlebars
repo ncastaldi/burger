@@ -1,9 +1,18 @@
 <div class="col s3">
-    <h5 class="center">Ordered Burgers</h5>
+    {{!-- <h5 class="center">Ordered Burgers</h5>
     {{#each burgers}}{{#unless devoured}}
     <div class="collection">
-        <a href="#!" class="collection-item change-devoured"><span class="badge">{{#if devoured}}Send it Back{{else}}Eat
+        <a href="#!" class="collection-item change-devoured" data-id="{{id}}"><span class="badge">{{#if devoured}}Send
+                it Back{{else}}Eat
                 Your Burger!{{/if}}</span>{{burger_name}}</a>
+    </div>
+    {{/unless}}{{/each}} --}}
+
+    <h5 class="center">Ordered Burgers</h5>
+
+    {{#each burgers}}{{#unless devoured}}
+    <div class="collection">
+        {{> burgers/burger-block devoured=true}}
     </div>
     {{/unless}}{{/each}}
 </div>
@@ -23,11 +32,20 @@
 </div>
 
 <div class="col s3">
-    <h5 class="center">Eaten Burgers</h5>
+    {{!-- <h5 class="center">Eaten Burgers</h5>
     {{#each burgers}}{{#if devoured}}
     <div class="collection">
-        <a href="#!" class="collection-item change-devoured"><span class="badge">{{#if devoured}}Send it Back{{else}}Eat
+        <a href="#!" class="collection-item change-devoured" data-id="{{id}}"><span class="badge">{{#if devoured}}Send
+                it Back{{else}}Eat
                 Your Burger!{{/if}}</span>{{burger_name}}</a>
+    </div>
+    {{/if}}{{/each}} --}}
+
+    <h5 class="center">Eaten Burgers</h5>
+
+    {{#each burgers}}{{#if devoured}}
+    <div class="collection">
+        {{> burgers/burger-block devoured=true}}
     </div>
     {{/if}}{{/each}}
 </div>
