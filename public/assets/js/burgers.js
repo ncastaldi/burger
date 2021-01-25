@@ -36,7 +36,7 @@ $(document).ready(function () {
     function eatReturn() {
         $(".change-devoured").on("click", function (event) {
             const id = $(this).data("id");
-            const newState = $(this).data("newstate");
+            const newState = $(this).data("devoured");
 
             const newDevouredState = {
                 devoured: newState
