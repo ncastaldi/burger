@@ -2,11 +2,11 @@
     {{burger_name}}
     <button data-id="{{id}}" data-devoured="{{devoured}}" class="change-devoured">
         <span>
-            {{#if devoured}}
+            {{#unless devoured}}
             Send it Back
             {{else}}
             Eat Your Burger!
-            {{/if}}
+            {{/unless}}
         </span>
     </button>
 </div>
