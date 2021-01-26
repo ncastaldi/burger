@@ -6,47 +6,32 @@ For this assignment, we created a burger logger with MySQL, Node, Express, Handl
 
 ## Table of Contents
 
-- [Features](#features)
 - [Badges](#badges)
-- [Installation](#installation)
 - [Usage](#usage)
-- [Tests](#tests)
 - [Support](#support)
-- [Credits](#credits)
-- [Contributing](#contributing)
 - [License](#license)
-
-## Features
-
-TBD (Optional)
 
 ## Badges
 
 [![GitHub license](https://img.shields.io/github/license/ncastaldi/burger?style=for-the-badge)](https://github.com/ncastaldi/burger/blob/main/LICENSE)
 
-## Installation
-
-TBD (Optional)
-
 ## Usage
 
-Include instructions and examples for use. Include screenshots as needed.
+1. Enter your burger order into the input field and click "Order".
+2. Click on an "Ordered Burger" to have it served to you.
+3. Click on a "Served Burger" to send it back to the kitchen.
 
-## Tests
+- GitHub Repository: [https://github.com/ncastaldi/burger](https://github.com/ncastaldi/burger)
 
-TBD (Optional)
+![./public/assets/img/repo-screenshot.png](./public/assets/img/repo-screenshot.png)
+
+- Live Site: [https://hw13-burger-njc.herokuapp.com/](https://hw13-burger-njc.herokuapp.com/)
+
+![./public/assets/img/site-screenshot.png](./public/assets/img/site-screenshot.png)
 
 ## Support
 
 For support on this app, feel free to [email me](mailto://nathan@castaldi.dev).
-
-## Credits
-
-TBD (Optional)
-
-## Contributing
-
-TBD (Optional)
 
 ## License
 
