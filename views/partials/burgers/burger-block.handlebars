@@ -1,13 +1,19 @@
 <div class="collection-item">
-    {{burger_name}}
-    <button data-id="{{id}}" data-devoured="{{devoured}}"
-        class="change-devoured btn btn-small waves-effect waves-light purple darken-3">
-        <span>
-            {{#unless devoured}}
-            Send it Back
-            {{else}}
-            Eat Your Burger!
-            {{/unless}}
-        </span>
-    </button>
+    <div class="row">
+        <div class="col">
+            {{burger_name}}
+        </div>
+        <div class="col">
+            <button data-id="{{id}}" data-devoured="{{devoured}}"
+                class="change-devoured btn btn-small waves-effect waves-light purple darken-3">
+                <span>
+                    {{#unless devoured}}
+                    Send it Back
+                    {{else}}
+                    Eat Your Burger!
+                    {{/unless}}
+                </span>
+            </button>
+        </div>
+    </div>
 </div>
